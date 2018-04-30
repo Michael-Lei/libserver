@@ -5,6 +5,7 @@
 #include <QTcpServer>
 #include <QTcpSocket>
 #include "utils/file/logstream.h"
+#include "utils/web/requesthdl.h"
 
 class socketThread: public QThread
 {
@@ -17,7 +18,7 @@ protected:
     virtual void run();
 
 private slots:
-    void Read();
+    void React();
     void disconnect();
 
 private:

@@ -18,9 +18,6 @@ protected:
     virtual void incomingConnection(qintptr socketDescriptor);
     //void removeUserFormList();
 
-private slots:
-    void test();
-
 private:
     QMap<QString, QTcpSocket *> m_mapClient;
 };

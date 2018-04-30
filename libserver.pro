@@ -24,7 +24,8 @@ SOURCES += main.cpp \
     utils/file/fileio.cpp \
     utils/file/logstream.cpp \
     utils/web/webserver.cpp \
-    utils/web/socketthread.cpp
+    utils/web/socketthread.cpp \
+    utils/web/requesthdl.cpp
 
 HEADERS += \
     utils/dbwrapper/db-wrapper.h \
@@ -34,4 +35,6 @@ HEADERS += \
     utils/file/loadsettings.h \
     utils/file/logstream.h \
     utils/web/webserver.h \
-    utils/web/socketthread.h
+    utils/web/socketthread.h \
+    utils/requesthdl.h \
+    utils/web/requesthdl.h
