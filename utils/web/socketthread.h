@@ -19,7 +19,6 @@ protected:
 
 private slots:
     void React();
-    void disconnect();
 
 private:
     qintptr socketDescriptor;

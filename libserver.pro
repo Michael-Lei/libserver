@@ -32,9 +32,7 @@ HEADERS += \
     utils/dbwrapper/db-operation.h \
     utils/config.h \
     utils/file/fileio.h \
-    utils/file/loadsettings.h \
     utils/file/logstream.h \
     utils/web/webserver.h \
     utils/web/socketthread.h \
-    utils/requesthdl.h \
     utils/web/requesthdl.h

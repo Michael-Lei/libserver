@@ -1,6 +1,6 @@
 #include "requesthdl.h"
 
-requesthdl::requesthdl(const QByteArray &rqtData):
+requesthdl::requesthdl(const QByteArray &rqtData)
 {
     QJsonDocument jsonDocument = QJsonDocument::fromBinaryData(rqtData);
     jsonRequest = jsonDocument.object();

@@ -25,16 +25,20 @@ void socketThread::run()
 
     connect(tcpsocket, &QAbstractSocket::readyRead, this, &socketThread::React);
 
+    tcpsocket->write("Welcome to libserver!");
+    tcpsocket->flush();
+
     tcpsocket->waitForDisconnected();
 }
 
 void socketThread::React()
 {
+    /*
     try
     {
         QByteArray ReadData, SendData;
         ReadData = tcpsocket->readAll();
-        if(Data.at(0) == 'Q')
+        if(ReadData.at(0) == 'Q')
         {
             // read
             ReadData.remove(0, 1);
@@ -50,16 +54,16 @@ void socketThread::React()
             // send
             SendData = hdl->deal();
             delete hdl;
-            tcpsocket->write(*SendData);
+            tcpsocket->write(SendData);
             tcpsocket->flush();
         }
         else
             throw("Bad Request");
-        tcpsocket->readLine(Data, 1024);
     }
-    catch(const char* msg)
+    catch(QString msg)
     {
         *lstream << "Error: " + msg;
         tcpsocket->close();
     }
+    */
 }
